@@ -1,0 +1,128 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Sahel";
+    src: url("fonts/Sahel-Light.woff");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/Connected.jpg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: "Sahel";
+    /* font-family: "Roboto"; */
+}
+
+
+.container {
+    background-color: rgba(61, 54, 54, 0.75);
+    backdrop-filter: blur(5px);
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input {
+    width: 99.5%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 2px;
+    outline: 0;
+}
+
+input::placeholder {
+    color: #000;
+    opacity: 50%;
+    font-size: 14px;
+}
+
+h1, .actions {
+    color: whitesmoke;
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.actions {
+    padding: 5px;
+}
+
+.actions a {
+    background-color: blue;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions a:hover {
+    background-color: #0202ce;
+}
+
+.list-group {
+    list-style-type: none;
+    /* background-color: red; */
+    margin: 15px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.list-item {
+    /* margin: 15px 0; */
+    padding: 10px 0;
+    padding-left: 20px;
+    background-color: rgb(205, 203, 203);
+    text-align: left;
+    border-bottom: 1px solid #1212;
+}
+
+.list-item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.list-item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.trash {
+    float: right;
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.trash:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-size: auto;
+        background-position: left;
+    }
+
+    .container {
+        width: 85%;
+    }
+}
